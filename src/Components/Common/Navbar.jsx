@@ -30,8 +30,8 @@ const Navbar = () => {
 
   })
   return (
-    <div className='mix-blend-difference '>
-      <div className='flex justify-between p-5 lg:p-10 '>
+    <div className='mix-blend-difference relative '>
+      <div className='flex justify-between p-5 lg:p-10 fixed '>
         <div className=''>
           <h1 className='nav-text overflow-clip font-medium'>INDIA Based</h1>
           {/* <h1 className='nav-text overflow-clip font-bold text-nowrap text-gray-400'>Working Globally</h1> */}

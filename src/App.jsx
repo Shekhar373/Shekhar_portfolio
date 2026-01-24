@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react'
 import Hero from './pages/Hero'
 import Navbar from './Components/Common/Navbar'
-import Video from './pages/About'
 import gsap from 'gsap'
 import { ScrollSmoother } from 'gsap/all'
 import About from './pages/About'
@@ -31,7 +30,7 @@ const App = () => {
 
     </div>
     <div id="smooth-wrapper">
-      <div id="smooth-content" className='text-[#171717]' >
+      <div id="smooth-content" className='text-[#171717] overflow-hidden' >
         <Hero />
         {/* <Test /> */}
         <About />

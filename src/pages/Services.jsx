@@ -13,7 +13,8 @@ const Services = () => {
 
          const split = SplitText.create(".about-top",{
             type:"lines",
-            mask:"lines"
+            mask:"lines",
+            linesClass:"line"
          })
 
          gsap.from(split.lines, {
@@ -31,6 +32,10 @@ const Services = () => {
               toggleActions: "play none none reverse"
             }
           })
+
+          return () => {
+            split.revert(); // 🔥 cleanup
+          };
 
        });
     return (
