@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className='h-screen w-full relative'>
+    <div className='h-[70vh] md:h-screen w-full relative'>
       {/* <div className="absolute z-0 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <h1 className='text-[12vw] font-bold'>Shekhar</h1>
       </div> */}
@@ -30,11 +30,11 @@ const Footer = () => {
           </div>
 
         </div>
-        <a href="mailto:shekhar72898@gmail.com">
-          <div className='footer-card h-[53vh] w-[59vw] relative z-20 bg-gray-200  mr-5 rounded-3xl flex items-end p-5 text-xl font-bold'>
+        {/* <a href="mailto:shekhar72898@gmail.com">
+          <div className='footer-card h-[53vh] w-[59vw] bg-gray-200  mr-5 xl:mr-0 rounded-3xl flex items-end p-5 text-xl font-bold'>
             <h1>Contact</h1>
           </div>
-        </a>
+        </a> */}
       </div>
     </div>
   )

@@ -23,14 +23,15 @@ const App = () => {
     });
   })
 
+  
+
   return (<>
     <div className='text-[#171717] '>
       <Loader />
       <Navbar />
-
     </div>
-    <div id="smooth-wrapper">
-      <div id="smooth-content" className='text-[#171717] overflow-hidden' >
+    <div id="smooth-wrapper overflow-x-clip">
+      <div id="smooth-content" className='text-[#171717] ' >
         <Hero />
         {/* <Test /> */}
         <About />

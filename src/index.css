@@ -2,11 +2,16 @@
 
 body {
     font-family: "Inter";
+    box-sizing: border-box;
 }
 
-/* .clip-text {
-    visibility: hidden;
-
-} */
+::selection{
+    background-color: rgb(42, 41, 41);
+    color: rgb(240, 232, 232);
+}
+/* 
+* {
+    outline: 1px solid red;
+  } */
 
 

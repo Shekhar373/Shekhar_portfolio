@@ -52,11 +52,11 @@ const DevelopmentCard = () => {
       <div className=' clip-text-about-2 text-l lg:text-xl'>
         02
       </div>
-      <div className=' clip-text-about-2 lg:pl-[15vw] text-2xl lg:text-4xl font-bold'>
+      <div className=' clip-text-about-2 lg:pl-[15vw] text-2xl lg:text-4xl xl:text-5xl font-bold'>
         <h1>Development</h1>
       </div>
       </div>
-      <div className=' w-full lg:w-[20vw]  text-sm lg:text-lg font-medium'>
+      <div className=' w-full lg:w-[20vw]  text-sm lg:text-lg xl:text-2xl font-medium'>
         <div>
           <h2 className='clip-text-about-2'>
             Building digital products that
@@ -64,7 +64,7 @@ const DevelopmentCard = () => {
             business strategy to deliver
             seamless user experiences.</h2>
         </div>
-        <div className='lg:pt-5 text-xs lg:text-l flex pt-3 lg:flex-col gap-1 font-normal'>
+        <div className='lg:pt-5 text-xs lg:text-l xl:text-xl flex pt-3 lg:flex-col gap-1 font-normal'>
           <h3 className='bg-[#3A3A3A] clip-text-about-2  w-fit rounded-xl px-2 py-1 '>FRONTEND</h3>
           <h2 className='bg-[#3A3A3A] clip-text-about-2  w-fit rounded-xl px-2 py-1 '>GSAP</h2>
           <h2 className='bg-[#3A3A3A] clip-text-about-2  w-fit rounded-xl px-2 py-1 '>ANIMATION</h2>
@@ -72,7 +72,7 @@ const DevelopmentCard = () => {
         </div>
       </div>
       <div>
-        <img ref={imgref} className='h-[60vh] w-screen lg:h-[40vh] lg:w-[25vw] rounded-2xl object-cover'
+        <img ref={imgref} loading="lazy" className='h-[40vh] w-screen lg:h-[40vh] lg:w-[25vw] rounded-2xl object-cover'
           src="https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29kaW5nfGVufDB8fDB8fHww" alt="" />
       </div>
     </div>

@@ -7,7 +7,7 @@ import React, { useRef } from 'react'
 const Hero = () => {
 
   const video = useRef(null)
-  const mousemove = useRef(null)
+  const smvideo = useRef(null)
 
   const hero = useRef()
 
@@ -25,7 +25,7 @@ const Hero = () => {
     )
 
     gsap.from(split.words, {
-      y: 200,
+      y: 250,
       duration: 1.2,
       delay: 3,
       ease: "expo.inOut",
@@ -33,6 +33,13 @@ const Hero = () => {
     })
 
     gsap.from(video.current, {
+      clipPath: "inset(0 0 100% 0)",
+      duration: 1.2,
+      delay: 2.8,
+      ease: "expo.inOut",
+    })
+
+    gsap.from(smvideo.current, {
       clipPath: "inset(0 0 100% 0)",
       duration: 1.2,
       delay: 2.8,
@@ -80,25 +87,25 @@ const Hero = () => {
   return (
     <div onMouseMove={handleMouseMove}
       onMouseLeave={handleLeave}
-      className='h-screen  md:h-[200vh] w-full overflow-hidden'>
+      className='h-screen  md:h-[200vh] w-full overflow-x-hidden'>
       <div ref={hero} className='h-screen w-full relative '>
         <div className='h-[15vh] md:[20vh]'></div>
         <div className='hidden md:visible h-[40vh] w-full'>
 
         </div>
-        <div className='h-[40vh] md:h-auto flex flex-col justify-center'>
+        <div className='h-[40vh] mt-15 lg:mt-0 md:h-auto flex flex-col justify-center'>
           
-          <div className='hero-text flex justify-between lg:mt-[53vh] px-5 lg:px-11 font-medium lg:font-bold'>
+          <div className='hero-text flex justify-between lg:mt-[53vh] xl:mt-[48vh] mb-5 lg:mb-0 px-5 lg:px-11 font-medium lg:font-bold'>
             <h3>A</h3>
             <h3>SERIOUSLY</h3>
             <h3>GOOD</h3>
           </div>
           <div className='flex justify-center md:hidden '>
-            <video className='h-[20vh] w-[90vw] md:h-[30vh] md:w-[30vw] md:absolute md:z-10'
+            <video ref={smvideo} className='h-[30vh] w-[95vw] md:h-[30vh] md:w-[30vw] md:absolute md:z-10'
               loop muted autoPlay src="https://www.itsjay.us/videos/jazmin-wong-preview-compressed.mp4"></video>
           </div>
           
-          <div className='hero-text  md:absolute h-[30vh] w-full flex-col flex lg:flex lg:flex-row pt-10 lg:mt-25 justify-center items-center text-[16vw] sm:text-[15vw] md:text-[20vw] leading-[7vh] sm:leading-[17vh] md:leading-[28vh] lg:text-[11.8vw] font-bold lg:tracking-tighter md:top-[50%]'>
+          <div className='hero-text  md:absolute h-[30vh] w-full flex-col flex lg:flex lg:flex-row pt-20 lg:mt-25 justify-center items-center text-[16vw] sm:text-[15vw] md:text-[20vw] leading-[9vh] sm:leading-[17vh] md:leading-[28vh] lg:text-[11.8vw] font-bold lg:tracking-tighter md:top-[50%]'>
             <h1>DESIGN</h1>
             <h1>ENGINEER</h1>
           </div>

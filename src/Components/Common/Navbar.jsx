@@ -24,29 +24,26 @@ const Navbar = () => {
     gsap.from(".nav-button", {
       opacity: 0,
       duration: 1.2,
-      delay: 2.8,
+      delay:3
     })
 
 
   })
   return (
-    <div className='mix-blend-difference relative '>
-      <div className='flex justify-between p-5 lg:p-10 fixed '>
+    <div className='mix-blend-difference relative z-40 w-screen'>
+      <div className=' w-full flex justify-between p-5 lg:p-10 fixed'>
         <div className=''>
           <h1 className='nav-text overflow-clip font-medium'>INDIA Based</h1>
           {/* <h1 className='nav-text overflow-clip font-bold text-nowrap text-gray-400'>Working Globally</h1> */}
-        </div>
+        </div>      
         <div className='nav-text opacity-0 md:opacity-100 font-medium text-nowrap'>
           <h1>Freelance availability</h1>
         </div>
-        
-          <div className='nav-button z-40 cursor-pointer'>
-            <button className=' bg-black text-nowrap rounded-4xl text-l font-medium text-white px-5 py-2'>
+        <div className='nav-button cursor-pointer'>
+          <button className=' bg-black text-nowrap rounded-4xl text-l font-medium text-white px-5 py-2'>
             <a href="mailto:shekhar72898@gmail.com">Get in touch</a>
-            </button>
-          </div>
-        
-
+          </button>
+        </div>
       </div>
     </div>
   )

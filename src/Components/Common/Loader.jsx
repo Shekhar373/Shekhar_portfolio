@@ -34,13 +34,13 @@ const Loader = () => {
     return (
         
 
-        <div className=' absolute h-screen w-full'>
-            <div className='h-screen w-full'>
-                <div className='loader [clip-path:inset(100%_0_0_0)] fixed h-full w-1/5 bg-black z-50'></div>
-                <div className='loader [clip-path:inset(100%_0_0_0)] fixed left-[20%] h-full w-1/5 bg-black z-50'></div>
-                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[40%] h-full w-1/5 bg-black z-50'></div>
-                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[60%] h-full w-1/5 bg-black z-50'></div>
-                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[80%] h-full w-1/5 bg-black z-50'></div>
+        <div className=' absolute h-screen w-screen'>
+            <div className='h-full w-full'>
+                <div className='loader [clip-path:inset(100%_0_0_0)] fixed h-full w-[20%] bg-black z-50'></div>
+                <div className='loader [clip-path:inset(100%_0_0_0)] fixed left-[20%] h-full w-[20%] bg-black z-50'></div>
+                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[40%] h-full w-[20%] bg-black z-50'></div>
+                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[60%] h-full w-[20%] bg-black z-50'></div>
+                <div className='loader fixed [clip-path:inset(100%_0_0_0)] left-[80%] h-full w-[20%] bg-black z-50'></div>
             </div>
         </div>
     )

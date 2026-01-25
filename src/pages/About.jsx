@@ -39,6 +39,23 @@ const About = () => {
         });
     })
 
+    mm.add("(max-width: 1023px)",()=>{
+      gsap.from(split.chars,{
+        opacity: 0,
+            yPercent: 120,
+            ease: "power",
+            stagger: {
+                amount: 0.1
+            },
+            scrollTrigger: {
+                trigger: "#about-text",
+                  // markers: true,
+                start: "top 30%",
+                toggleActions: "play none none reverse"
+            }
+      })
+    })
+
 
     // gsap.from(split.chars, {
     //       'will-change': 'transform',
@@ -70,7 +87,8 @@ const About = () => {
       scrollTrigger: {
         trigger: "#about-text",
         // markers:true,
-        start: "top 0"
+        start: "top 20%",
+        toggleActions: "play none none reverse"
       }
     })
   })
@@ -79,13 +97,13 @@ const About = () => {
 
 
   return (
-    <div id='about' className='h-screen lg:h-[330vh]  w-full flex justify-center'>
-      <div id='about-text' className='about-text-parent h-screen w-full flex flex-col lg:flex-wrap lg:mt-[20vh]'>
-        <div className='about-text h-1/2 lg:h-full w-full lg:w-[60%] p-10 text-[4vw] lg:text-[2.5vw] font-medium flex justify-center items-center'>
+    <div id='about' className='h-screen lg:h-[330vh] w-full flex justify-center'>
+      <div id='about-text' className='about-text-parent h-screen w-full flex flex-col lg:flex-row lg:mt-[20vh]'>
+        <div className='about-text lg:h-full w-full lg:w-[60%] p-10 text-[4vw] lg:text-[2.5vw] font-medium flex justify-center items-center'>
           <h1>Hi! I’m a frontend developer who loves creating visually engaging and interactive websites. I work with HTML, CSS, JavaScript, React, and Tailwind CSS, and I enjoy enhancing user experiences with GSAP and web animations.
             I’m constantly learning and practicing through real projects, and this portfolio reflects my journey and passion for frontend development.</h1>
         </div>
-        <div className='h-1/2 lg:h-full w-full about-video lg:w-[40%] flex justify-center items-center'>
+        <div className='about-video lg:h-full w-full  lg:w-[40%] flex justify-center items-center '>
           <video ref={aboutvideo} loop muted autoPlay
             className='h-[30vh] w-[85vw] lg:h-[30vh] lg:w-[30vw] rounded-xl  object-cover'
             src="https://www.itsjay.us/videos/jazmin-wong-preview-compressed.mp4"></video>
