@@ -40,9 +40,9 @@ const Services = () => {
        });
     return (
         <div className='h-[170vh] w-full mt-[20vh] lg:mt-0 flex justify-center items-center '>
-            <div className='h-[200vh] lg:h-[165vh] w-[95vw] bg-[#171717] flex flex-col items-center justify-center rounded-4xl'>
+            <div className='h-[222vh] lg:h-[165vh] w-[95vw] bg-[#171717] flex flex-col items-center justify-center rounded-4xl'>
                 <div>
-                    <div className='about-top text-white font-medium text-xl md:text-4xl lg:text-4xl xl:[8vw] h-[50vh]  w-full xl:w-[70vw] pl-[5vw] lg:pl-[20vw]  pr-[5vw] pt-[5vh] lg:pt-[10vh]'>
+                    <div className='about-top text-white font-medium text-xl md:text-4xl lg:text-4xl h-[50vh] w-full pl-[5vw] lg:pl-[20vw]  pr-[5vw] pt-[5vh] lg:pt-[10vh]'>
                         <h1 className='text-2xl text-gray-400'>Services</h1>
                         <h1>Evolving with every brief and built for impact, my
                             process spans design, development, and brand
@@ -50,7 +50,7 @@ const Services = () => {
                             clarity and edge to every project.</h1>
                     </div>
                 </div>
-                <div className='h-[147vh] lg:h-[110vh] w-[97%]  rounded-4xl bg-[#262626] flex-col flex gap-[10vh] lg:gap-15 items-center '>
+                <div className='h-[167vh] lg:h-[110vh] w-[97%]  rounded-4xl bg-[#262626] flex-col flex gap-[17vh] lg:gap-15 items-center '>
                     <DesignCard />
                     <DevelopmentCard />
                 </div>

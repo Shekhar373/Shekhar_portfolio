@@ -24,7 +24,7 @@ const Navbar = () => {
     gsap.from(".nav-button", {
       opacity: 0,
       duration: 1.2,
-      delay:3
+      delay:3.4
     })
 
 
