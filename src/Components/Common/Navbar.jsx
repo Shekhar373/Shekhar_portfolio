@@ -30,9 +30,10 @@ const Navbar = () => {
 
   })
   return (
-    <div className='mix-blend-difference relative z-40 w-screen'>
+    <div className=' relative z-40 w-screen'>
       <div className=' w-full flex justify-between p-5 lg:p-10 fixed'>
-        <div className=''>
+        <div className='mix-blend-difference'>
+          <h1 className='nav-text font-bold text-xl'>Shekhar</h1>
           <h1 className='nav-text overflow-clip font-medium'>INDIA Based</h1>
           {/* <h1 className='nav-text overflow-clip font-bold text-nowrap text-gray-400'>Working Globally</h1> */}
         </div>      
@@ -40,7 +41,7 @@ const Navbar = () => {
           <h1>Freelance availability</h1>
         </div>
         <div className='nav-button cursor-pointer'>
-          <button className=' bg-black text-nowrap rounded-4xl text-l font-medium text-white px-5 py-2'>
+          <button className=' bg-black text-nowrap rounded-4xl text-xs md:text-lg font-medium text-white px-5 py-2'>
             <a href="mailto:shekhar72898@gmail.com">Get in touch</a>
           </button>
         </div>

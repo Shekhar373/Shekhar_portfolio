@@ -23,7 +23,7 @@ const TechStack = () => {
   // })
 
   return (
-    <div className='h-screen lg:h-[150vh] mt-[50vh] lg:mt-[30vh]  w-full flex flex-col gap-30'>
+    <div className='h-screen lg:h-[150vh] mt-[50vh] lg:mt-[30vh]  w-full flex flex-col gap-10 md:gap-30'>
       <div className='tech-stack text-[12vw] text-center leading-[11vw] font-bold tracking-wide'>
         <h1>MORDERN </h1>
         <h1>TECH STACK</h1>

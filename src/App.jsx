@@ -23,8 +23,6 @@ const App = () => {
     });
   })
 
-  
-
   return (<>
     <div className='text-[#171717] '>
       <Loader />

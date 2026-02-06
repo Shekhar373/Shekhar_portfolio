@@ -97,14 +97,14 @@ const About = () => {
 
 
   return (
-    <div id='about' className='h-[150vh] lg:h-[330vh] mt-[20vh] lg:mt-0 w-full flex justify-center'>
+    <div id='about' className='h-screen md:h-[150vh] lg:h-[330vh] mt-5 md:mt-[20vh] lg:mt-0 w-full flex justify-center'>
       <div id='about-text' className='about-text-parent h-screen w-full flex flex-col lg:flex-row lg:mt-[20vh]'>
-        <div className='about-text lg:h-full w-full lg:w-[60%] p-10 text-[4vw] lg:text-[3.5vw] font-medium flex justify-center items-center md:leading-[4.5vw] lg:leading-[3.5vw]'>
+        <div className='about-text lg:h-full w-full lg:w-[60%] p-5 md:p-10 text-[5.5vw] font-bold md:text-[4vw] lg:text-[3.5vw] md:font-medium flex justify-center items-center leading-[6vw] md:leading-[4.5vw] lg:leading-[3.5vw]'>
           <h1>Passionate about merging design and engineering, I craft smooth, interactive experiences with purpose. With a focus on motion, performance, and detail, I help bring digital products to life for forward-thinking brands around the world</h1>
         </div>
         <div className='about-video lg:h-full w-full  lg:w-[40%] flex justify-center items-center '>
           <video ref={aboutvideo} loop muted autoPlay
-            className='h-[50vh] w-[90vw] lg:h-[30vh] lg:w-[30vw] rounded-xl  object-cover'
+            className='h-[30vh] md:h-[50vh] w-[90vw] lg:h-[30vh] lg:w-[30vw] rounded-xl  object-cover'
             src="https://www.itsjay.us/videos/jazmin-wong-preview-compressed.mp4"></video>
         </div>
       </div>
